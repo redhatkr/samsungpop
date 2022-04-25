@@ -1,0 +1,605 @@
+@charset "utf-8";
+
+/********************
+* 기본 변수성 클래스 Stylesheet *
+- Input Tag style ,
+- Button style ,
+- Text Icon style ,
+- Float style ,
+- Text style ,
+- Align style ,
+- 여백 style ,
+********************/
+
+
+/********************
+Input Tag style
+********************/
+input, select, textarea,label,button,textarea {color:#000;font-size:14px;line-height:1.42;letter-spacing:-1px;font-family:'맑은 고딕','Malgun Gothic','돋음',Dotum,Apple SD Gothic Neo,AppeGothic,Arial,Helvetica,sans-serif;vertical-align:middle;}
+input {letter-spacing:0;}
+textarea {padding:10px;border:1px solid #d5d5d5;color:#222;background:#fafafa;}
+textarea:focus {outline:none;border:1px solid #3dadec;padding:8px 7px 8px 9px;}
+select {height:36px;padding:0 0 0 6px;color:#a0a3aa;}
+label.disabled,label.readonly, .readonly + label, .readonly + label {color:#b1b1b1;}
+.iframeLayer, .resizeDummy {background:transparent;}
+ /* #investorLayerModalPop .popSection {margin:120px 0 100px 0 !important;} /* 일반팝업안에 레이어팝업일경우 */
+/* input */
+input[type=text], input[type=password] {height:40px;padding:0 10px 2px 10px;line-height:38px;border:1px solid #d5d5d5;box-sizing:border-box;color:#222;background:#fafafa;}
+input[type=text]:focus, input[type=password]:focus {padding:0 8px 2px 8px !important;color:#222;line-height:32px;border:3px solid #3dadec;outline:none;}
+input[type=password].pw {width:100px;}
+input[type=text].error, input[type=password].error {border:3px solid #c9414d;}
+input[type=text].no-style {height:auto;border-width:0;margin-top:-5px;padding-left:0;padding-right:0;background-color:transparent;color:#2768c3;font-size:16px;line-height:1.42;}
+input[type="text"].slip,
+input[type=text].slip:focus {height:28px !important;line-height:26px !important;}
+input[type="password"].slip,
+input[type=password].slip:focus {height:28px !important;line-height:26px !important;}
+input.readonly, input.unreadonly, input.readonly:focus, input.disabled, input.disabled:focus, input.unreadonly:focus {border-color:#b4b4b8;background-color:#f0f0f0;color:#4b4c52;}
+input.unreadonly:focus{border:1px solid #b4b4b8;}
+/* textarea */
+textarea {padding:10px;border:1px solid #d5d5d5;color:#222;background:#fafafa;}
+textarea:focus {outline:none;border:3px solid #3dadec;padding:8px 7px 8px 9px;}
+iframe {overflow:hidden;border:0;}
+/* Radio, Checkbox */
+.radio {display:inline-block;vertical-align:middle;width:20px;height:20px;background:url(/ux/images/common/ico_form.png) no-repeat;}
+.radio input {opacity:0;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);/* for ie8 */filter:alpha(opacity=0);/* for ie5-7 */;}
+.radio:hover {background-position:0 0;}
+.radio.focus {background-position:0 -40px;}
+.radio.checked {background-position:0 -20px;}
+.radio.checked.focus {background-position:0 -60px;}
+.radio.readonly, .radio.disabled {opacity:.5;}
+.radio + .radio {margin-left:5px;}
+.checkbox {display:inline-block;vertical-align:middle;width:20px;height:20px;background:url(/ux/images/common/ico_form.png) no-repeat -21px 0;}
+.checkbox input {width:20px;height:20px;opacity:0;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);/* for ie8 */filter:alpha(opacity=0);/* for ie5-7 */;}
+.checkbox:hover {background-position:-21px 0}
+.checkbox.focus {background-position:-21px -40px;}
+.checkbox.checked {background-position:-21px -20px;}
+.checkbox.checked.focus {background-position:-21px -61px;}
+.checkbox.readonly {opacity:.2;}
+.checkbox.disabled {opacity:.5;}
+.checkbox + .checkbox {margin-left:5px;}
+/* Selectbox */
+select {height:36px;padding:0 0 0 6px;color:#a0a3aa;}
+.select-box {display:inline-block;position:relative;height:40px;vertical-align:middle;background-color:#fff;}
+.select-box .wrap {position:absolute;top:0;left:0;width:100%;background-color:#fff;}
+.select-box .wrap div {padding:0 10px;height:38px !important;border:1px solid #d5d5d5 !important;font-size:14px;vertical-align:middle;position:relative;text-align:left;}
+.select-box .wrap div span {display:inline-block;height:36px;padding-bottom:2px;line-height:36px;}
+.select-box .wrap div a.selecter {position:absolute;top:0;right:0;display:block;width:39px;height:38px;margin:0 !important;background:url(/ux/images/common/arrow_select.gif) no-repeat;text-indent:-9999px;}
+.select-box.on .wrap .disable a.selecter {background-image:url(/ux/images/common/arrow_select_on.gif);}
+.select-box .list.full {height:auto ! important;}
+.select-box .list {position:absolute;top:39px;left:0;height:132px;overflow-y:auto;overflow-x:hidden;border:1px solid #d5d5d5;background-color:#fff;font-size:14px;text-align:left;}
+.select-box .list ul, .select-box .list li {border:0 !important;background-color:#fff !important;outline:0;}
+.select-box .list li a {display:block;padding:5px 10px;color:#000;text-decoration:none;border:0 !important;}
+.select-box .list li.on a, .select-bgox .list li a:focus, .select-box .list li a:hover {color:#2768c3;text-decoration:none;}
+select.disable+.wrap div {opacity:.5;}
+/* select-box height 30px 단일사용시 */
+.slipSelect {display:inline-block;}
+.slipSelect .select-box {width:70px;height:30px !important;}
+.slipSelect .select-box .wrap div {height:28px !important;}
+.slipSelect .select-box .wrap div span {height:28px !important;line-height:27px !important;font-size:13px;}
+.slipSelect .select-box .wrap div a.selecter {width:28px !important;height:28px !important;border-left:1px solid #bbb;background-position:-6px -4px !important;}
+.slipSelect .select-box .list li a, .slipSelect .select-box .list li.on a, .slipSelect .select-bgox .list li a:focus, .slipSelect .select-box .list li a:hover {font-size:13px;}
+.slipSelect .select-box .list {top:30px;text-align:left;}
+.slipSelect span {margin-right:5px;}
+
+/*select-box list scroll 없음(부모요소에 noscroll 클래스 넣어주기)*/
+.noscroll .list{height:auto !important;}
+
+/*select-box list 추가 7줄, 9줄*/
+.selectList5 .select-box .list{height:179px !important}
+.selectList7 .select-box .list{height:207px !important}
+.selectList9 .select-box .list{height:267px !important}
+
+/********************
+Button style
+**********************/
+button[type="button"] {box-sizing:content-box;cursor:pointer;-ms-interpolation-mode:nearest-neighbor;border-radius:0;}
+button[type="button"] + button[type="button"] {margin-left:4px;}
+/* 버튼 : button 태그가 기준 - btnLarge,btnMid,btnSmall */
+.btnLarge, .btnMid, .btnSmall, .btnEtc {display:inline-block;padding:0 15px;border-radius:1px;font-size:14px;color:#fff;text-decoration:none;text-align:center;vertical-align:middle;}
+.btnLarge:hover, .btnMid:hover, .btnSmall:hover, .btnEtc:hover {text-decoration:none;}
+.modal, .pop, .unellipsis, .page, .btnText, .plus, .minus, .expendSw, .prev, .next, .anew, .txtModal, .txtModal2, .img, .pdf, .ppt, .roundChk, .word {vertical-align:middle;background:transparent url(/ux/images/common/btn/bg_btn_ico_set.png) no-repeat 0 0;}
+/* btnLarge */
+.btnLarge {display:inline-block;position:relative;min-width:70px;height:38px;padding:0 15px;font-size:16px;color:#fff;line-height:34px;}
+.btnLarge.white.like {padding-left:30px;background:url(/ux/images/common/btn/bg_like.png) no-repeat 14px 14px;}
+.btnLarge.white.like.selected {background-position:14px -25px;}
+.btnLarge.white.like span {display:inline-block;margin-left:8px;color:#c75414;font-size:14px;}
+input + .btnLarge, .select-box + .btnLarge, .placeHolder_input + .btnLarge {margin-left:6px}/* 확인이 필요함 */
+/* btnMid */
+.btnMid {display:inline-block;position:relative;height:28px;line-height:24px;padding:0 12px;}
+.btnSmall.auto {height:auto; padding:5px 12px; line-height:14px;}
+input + .btnMid.modal {margin-left:6px}
+/* btnSmall */
+.btnSmall {display:inline-block;height:23px;padding:0 10px;font-size:12px;line-height:21px;text-align:center;background-color:#fff;}
+.btnSmall.data {border:1px solid #bbb;font-size:12px;color:#747474;}
+.btnSmall.hidelist {padding-right:30px;background:url(/ux/images/common/bg_finduct_class.png) no-repeat right -128px;}
+.btnSmall.showlist {padding-right:30px;background:url(/ux/images/common/bg_finduct_class.png) no-repeat right -159px;}
+.btnSmall.showlist span {display:inline-block;position:relative;margin-right:3px;color:#0977c9;}
+.btnSmall.white.plus {background-position:right -293px;}
+/* 버튼색상별 - 회색,흰색,블루,레드 */
+.btnLarge.gray ,.btnMid.gray ,.btnSmall.gray {color:#fff !important;background-color:#6c6f71 !important;border:1px solid #6c6f71 !important;}
+.btnLarge.gray:hover, .btnLarge.gray:hover, .btnSmall.gray:hover {border:1px solid #56595a !important;}
+.btnLarge.white, .btnMid.white, .btnSmall.white {background-color:#fff;border:1px solid #bbb !important;color:#222 !important;}
+.btnLarge.white:hover, .btnMid.white:hover, .btnSmall.white:hover {border:1px solid #0977c9 !important;}
+.btnLarge.blue, .btnMid.blue, .btnSmall.blue {background-color:#0977c9 !important;border:1px solid #0977c9 !important;}
+.btnLarge.blue:hover, .btnMid.blue:hover, .btnSmall.blue:hover {border:1px solid #064574 !important;}
+.btnLarge.red, .btnMid.red, .btnSmall.red {background-color:#e81a1a !important;border:1px solid #e81a1a !important;color:#fff !important;}
+.btnLarge.red:hover, .btnMid.red:hover, .btnSmall.red:hover {text-decoration:underline !important;border:1px solid #e81a1a !important;}
+.btnLarge.green, .btnMid.green, .btnSmall.green {background-color:#677718 !important;border:1px solid #677718 !important;color:#fff !important;}
+.btnLarge.green:hover, .btnMid.green:hover, .btnSmall.green:hover {text-decoration:underline !important;border:1px solid #677718 !important;}
+.btnLarge.grayToblue {color:#FFF;background-color:#6c6f71 !important;border:1px solid #6c6f71 !important;}
+.btnLarge.grayToblue:hover, .btnLarge.grayToblue:focus, .btnLarge.grayToblue.checked {background-color:#0977c9 !important; border:1px solid #064574 !important;}
+/* > 페이지 바로가기 */
+.page {padding-right:26px !important;}
+.btnLarge.white.page {background-position:right -26px !important;}
+.btnLarge.red.page, .btnLarge.blue.page, .btnLarge.gray.page, .btnLarge.page.disabled {background-position:right 4px !important;}
+.btnMid.white.page {background-position:right -31px !important;}
+.btnMid.red.page, .btnMid.blue.page, .btnMid.gray.page, .btnMid.page.disabled {background-position:right -1px !important;}
+.btnSmall.white.page {background-position:right -33px !important;}
+.btnSmall.red.page, .btnSmall.blue.page, .btnSmall.gray.page, .btnSmall.page.disabled {background-position:right -3px !important;}
+.btnText.page {padding-right:14px !important;background-position:right -76px;}
+.txtModal {padding-right:26px !important;background-position:right -195px !important;font-size:14px;color:#444;}
+.txtModal2 {padding-right:24px !important;background-position:right -197px !important;font-size:12px;letter-spacing:-1px;color:#5a96c8;text-decoration:underline;}
+.txtModal2.txt_font18 {background-position:right -193px !important;}
+/* > 팝업 */
+.modal {/* padding-right:33px !important; */ padding-right:25px !important;}
+.btnLarge.white.modal {min-width:45px;padding:0 35px 0 20px !important;background-position:right -185px !important;}
+.btnLarge.red.modal, .btnLarge.blue.modal, .btnLarge.gray.modal, .btnLarge.modal.disabled {min-width:45px;padding:0 35px 0 20px !important;background-position:right -106px !important;}
+.btnMid.white.modal {background-position:right -191px !important;}
+.btnMid.red.modal, .btnMid.blue.modal, .btnMid.gray.modal, .btnMid.modal.disabled {background-position:right -111px !important;}
+.btnSmall.white.modal {padding-right:25px !important;background-position:right -194px !important;}
+.btnSmall.red.modal, .btnSmall.blue.modal, .btnSmall.gray.modal, .btnSmall.modal.disabled {padding-right:28px !important;background-position:right -114px !important;}
+/* > 자세히 보기버튼 */
+.plus, .minus {padding-right:30px !important;}
+.btnLarge.white.plus {background-position:right -285px !important;}
+.btnLarge.red.plus, .btnLarge.gray.plus, .btnLarge.blue.plus, .btnLarge.plus.disabled {background-position:right -315px !important;}
+.btnMid.white.plus {background-position:right -290px !important;}
+.btnMid.red.plus, .btnMid.gray.plus, .btnMid.blue.plus, .btnMid.plus.disabled {background-position:right -320px !important;}
+.btnSmall.white.plus {background-position:right -293px !important;}
+.btnSmall.red.plus, .btnSmall.gray.plus, .btnSmall.blue.plus, .btnSmall.plus.disabled {background-position:right -323px !important;}
+/* 자세히 보기 열었을때 버튼 */
+.btnLarge.white.minus {background-position:right -341px !important;}
+/* minus 버튼 */
+.btnMid.white.minus {background-position:right -346px !important;}
+/* left 버튼 */
+.btnSmall.page.left {padding:0 10px 0 26px !important;}
+.btnSmall.white.page.left {background-position:left -412px !important;}
+.btnMid.page.left {padding:0 10px 0 26px !important;}
+.btnMid.white.page.left {background-position:left -410px !important;}
+/* > 새로고침 */
+.anew {padding-right:30px !important;}
+.btnLarge.white.anew {background-position:right -435px !important;}
+.btnMid.white.anew {background-position:right -440px !important;}
+.btnSmall.white.anew {background-position:right -443px !important;}
+/* 숨김부분 열기버튼 */
+.unellipsis {background-position:right -237px;padding-right:18px;font-size:14px;line-height:16px;color:#0068b6;}
+.unellipsis.close {background-position:right -267px;} /* js에서 안보이게 되어있음 - 확인해야됨 */
+/* 체크하는 버튼 */
+.btnCheck,
+.btnChecked {padding-left:36px !important;border:1px solid #bbb;color:#222 !important;font-size:12px !important;background:#fff url(/ux/images/common/ico_img_check.png) 10px 3px no-repeat;}
+.btnCheck:hover {border:1px solid #0977c9;background-position:10px -57px;}
+.btnChecked {background-position:10px -27px !important;}
+/* 체크하는 버튼 - 중간크기*/
+.btnCheck2:hover {border: 1px solid #0977c9; background-position: 10px -54px;}
+.btnCheck2, .btnChecked2 {padding-left: 36px !important; border: 1px solid #bbb; color: #222 !important; font-size: 14px !important; background: #fff url(/ux/images/common/ico_img_check.png) 10px 5px no-repeat;}
+.btnChecked2 {background-position: 10px -24px !important;}
+/* .btnCheck:active {background-position:10px -27px;} */
+/* 기타버튼 */
+.white.line_finduct span {display:inline-block;padding-left:3px;color:#c75414;}/* 사용하는곳 확인해야됨 */
+/* 기타 버튼 스타일 - 매도/매수/이체 */
+.btnEtc {display:inline-block;height:25px;padding:0 12px;color:#fff;font-size:12px;font-size:12px;line-height:23px;}
+.btnEtc.red {background-color:#e81a1a;}
+.btnEtc.red:hover,
+.btnEtc.blue:hover {text-decoration:underline;}
+.btnEtc.blue {background-color:#0364a7;}
+.btnEtc.white {border:1px solid #bbb;color:#222;line-height:21px;height:23px;}
+.btnEtc.white:hover {border:1px solid #0977c9;}
+/* 아이콘 붙은 버튼 */
+.btnMid.excel,
+.btnMid.help,
+.btnMid.print {padding-right:30px;background:url(/ux/images/common/btn/bg_btn_ico_set.png) no-repeat 0 0;}
+.btnMid.white.print {background-position:right -556px !important;} /* 인쇄 */
+.btnMid.white.help {background-position:right -603px !important;} /* 도움말 */
+.btnMid.white.excel {background-position:right -650px !important;} /* 엑셀 */
+.btnMid.white.img {padding-right:33px !important;background-position:right -694px;} /* 이미지 */
+.btnMid.white.pdf {padding-right:33px !important;background-position:right -734px;} /* PDF */
+.btnMid.white.ppt {padding-right:33px !important;background-position:right -772px;} /* PPT */
+.btnMid.white.roundChk {padding-right:30px !important;background-position:right -802px;} /* 원형체크 */
+.btnMid.white.word {padding-right:30px !important;background-position:right -833px;} /* 원형체크 */
+/* 파일 */
+.btnFile {display:inline-block;height:22px;padding:8px 26px 0 0;font-size:13px;line-height:14px;color:#5a96c8;text-decoration:underline;}
+.btnFile.pdf {background:url(/ux/images/common/ico_pdf.png) right center no-repeat;}
+.btnFile.pdf.board {padding:8px 0 0 26px;background-position:0 center;} /* 아이콘이 앞에 오는 경우 */
+/* 링크형 버튼 버튼들 */
+.prve {background-position:left -142px;}/* 사용하는곳 확인해야됨 */
+.next {background-position:right -31px;}/* 사용하는곳 확인해야됨 */
+.btnText {padding-right:14px;font-size:13px;line-height:14px;color:#5a96c8;text-decoration:underline;background:url(/ux/images/common/btn/bg_btn_ico_set.png) no-repeat right -74px;}
+.btnText.inline {display:inline-block;margin-left:10px;}
+.btnText.txt_font14 {line-height:17px}
+.btnText.bgN {padding-right:0;font-size:13px;line-height:14px;color:#5a96c8;vertical-align:middle;text-decoration:underline;background:none;} /* 이미지가 없는경우 */
+/* 열고닫기를 이용하는 버튼 - 사용하는곳 확인해야됨 */
+a.expendSw {padding-right:30px;background-position:right -290px;}
+a.expendSw.blue {padding-right:30px;background-position:right -320px;}
+.current a.expendSw {padding-right:30px;background-position:right -347px;}
+.current a.blue.expendSw {padding-right:30px;background-position:right -377px;}
+/* 버튼 목록 */
+ul.btnText_list {display:block;}
+ul.btnText_list li {display:inline-block;margin-left:10px;padding-left:10px;border-left:solid #ddd 1px;line-height:14px;}
+ul.btnText_list li:first-child {margin:0;padding:0;border-left:none;}
+/* 비활성화 버튼 */
+a:link.disabled,
+a:link.disabled:hover,
+button.disabled,
+button.disabled:hover,
+button[type="button"]:disabled,
+button[type="button"]:disabled:hover {cursor:default;border:1px solid #ddd !important;color:#b7b7b7 !important;background-color:#ddd !important;}
+a.disabled, a.disabled:hover, button[type="button"].disabled, button[type="button"].disabled:hover, .btnSmall.disabled, .btnSmall.disabled:hover, .btnMid.disabled, .btnMid.disabled:hover, .btnLarge.disabled, .btnLarge.disabled:hover {cursor:default;border:1px solid #ddd !important;color:#b7b7b7 !important;background-color:#ddd !important;} /* for ie8*/
+
+/* 차트 토글버튼  */
+.chartToggle {display:inline-block; position:relative; height:28px; margin:0; padding:0 38px 0 14px; background:url(/ux/images/common/btn/bg_btn_ico_set.png) no-repeat right -516px; text-align:center; color:#222; line-height:26px; border:solid #ddd 1px;}
+.chartToggle.opened {background-position:right -480px;}
+.ct_target {display:block; position:relative; margin:0; padding:0;}
+
+/* 관심종목등록  */
+button.btnMid.favorite {padding-right:33px; background:url(/ux/images/common/btn/bg_btn_ico_set.png) no-repeat right -801px;}
+button.btnLarge.favorite {padding-right:33px; background:url(/ux/images/common/btn/bg_btn_ico_set.png) no-repeat right -797px;}
+
+/* 버튼최소 넓이 제거  */
+.unwidth {min-width:inherit !important;}
+
+/* 버튼이 a 태그일 경우 */
+/*a.btnLarge {height:36px;line-height:34px;}*/
+a.btnMid {height:26px;line-height:25px;}
+a.btnSmall, a.btnEtc {height:23px;line-height:21px;}
+
+
+/*달력아이콘버튼*/
+.btnCal span {background:url('/ux/images/common/btn/bg_btnCal.png') no-repeat left 2px;padding-left:30px;}
+
+/* 영상통화 버튼 사이즈 작은 스타일 */
+.btnMid.vdp{font-size:13px !important;padding:0 5px !important}
+
+
+/********************
+Text Icon style
+**********************/
+/* 주가관련 */
+.rise, a.rise, .rise a, .riseIC {color:#e81a1a !important;}
+.riseIC, .rise var {padding-left:15px;background:url(/ux/images/common/ico_stock_status.png) no-repeat 0 6px;font-style:normal;color:#ee2100;}
+.drop, a.drop, .drop a, .dropIC {color:#0364a7 !important;}
+.dropIC, .drop var {padding-left:15px;background:url(/ux/images/common/ico_stock_status.png) no-repeat 0 -24px;font-style:normal;color:#007dba;}
+.keep, a.keep, .keep a, .keepIC {color:#222 !important;}
+.keepIC, .keep var {padding-left:15px;/* background:url(/ux/images/common/ico_stock_status.png) no-repeat 0 -51px; */font-style:normal;color:#222;}
+/* 작은사이즈 */
+.riseSmall, a.riseSmall, .riseSmall a, .riseICSmall {color:#e81a1a;}
+.riseICSmall, .riseSmall var {display:inline-block;position:relative;width:9px;height:9px;top:2px;padding-left:3px;background:url(/ux/images/common/ico_stock_status_small.png) no-repeat 0 0px;font-style:normal;color:#e81a1a;}
+.dropSmall, a.dropSmall, .dropSmall a, .dropICSmall {color:#0364a7;}
+.dropICSmall, .dropSmall var {display:inline-block;position:relative;width:9px;height:9px;top:2px;padding-left:3px;background:url(/ux/images/common/ico_stock_status_small.png) no-repeat 0 -40px;font-style:normal;color:#0364a7;}
+.keepSmall, a.keepSmall, .keepSmall a, .keepICSmall {color:#222;}
+.keepICSmall, .keepSmall var {display:inline-block;position:relative;width:9px;height:9px;top:2px;padding-left:3px;font-style:normal;color:#222;}
+/* 원금지급여부 */
+.vouch_for {padding-top:25px;text-align:center;background:url(/ux/images/finance/vouch_for_bg.png) center top no-repeat;}
+.vouch_for.knockIn {background:url(/ux/images/finance/vouch_for_bg2.png) center top no-repeat;}
+/* 기초자산 유형 */
+.icoFund {display:block;padding:4px 0;text-align:left;}
+.icoFund img {width:20px;height:20px;vertical-align:middle;margin-right:4px;}
+/* 상품유형 */
+.ico_invstType {display:inline-block;height:20px;padding-left:35px;font-size:13px;background:url(/ux/images/common/ico_investType.png) 0 1px no-repeat;}
+.ico_invstType.foreignStock {background-position:0 -30px;}
+.ico_invstType.fund {background-position:0 -61px;}
+.ico_invstType.bond {background-position:0 -92px;}
+.ico_invstType.multi {background-position:0 -124px;}
+.ico_invstType.derivative {background-position:0 -155px;}
+/* 달러아이콘 */
+.ico_money {display:inline-block;height:20px;padding-left:28px;font-size:13px;background:url(/ux/images/common/ico_money.png) 0 1px no-repeat;}
+.ico_money var {letter-spacing:1px; font-style:normal;}
+/* 레이블 색상박스 */
+.label_box {display:inline-block;padding:2px 3px 0 3px;border:1px solid #8f8f8f;color:#676767;font-size:11px;line-height:12px;font-family:Dotum,Arial;text-align:center;}
+.label_box.case1 {color:#0ca9af;border:1px solid #0ca9af;}
+.label_box.case2 {color:#b4558c;border:1px solid #b4558c;}
+.label_box.case3 {color:#0977c9;border:1px solid #0977c9;}
+/* 상품아이콘 - 테이블 안 */
+ul.badge {display:table;position:relative;margin:0 0 2px 0;padding:0;}
+ul.badge li {Float:left;display:inline-block;position:relative;margin:0;padding:0;}
+ul.badge li + li {margin-left:2px;}
+/* 원금지급 유무 */
+.ico_pay {display:inline-block;height:20px;padding-left:35px;background:url(/ux/images/common/ico_capital.png) 0 1px no-repeat;font-size:12px;}
+.ico_pay.knockIn {background-position:0 -53px;}
+/* 상품아이콘 - 상품타이틀 */
+.headding {display:block;position:relative;}
+.headding .badge {display:table;position:relative;margin:0 0 10px 0;padding:0;}
+.headding .badge li {float:left;display:inline-block;position:relative;height:15px;margin:0;padding:0 3px 0 19px;border-style:solid;border-width:1px;border-left:none;font-family:dotum,Arial;font-size:11px;line-height:17px}
+.headding .badge li + li {margin-left:2px;}
+.headding .badge li.badge1 {background:url(/ux/images/finance/finduct_badge1.gif) no-repeat left top;border-color:#00b2a9;color:#00b2a9;}
+.headding .badge li.badge2 {background:url(/ux/images/finance/finduct_badge2.gif) no-repeat left top;border-color:#61a435;color:#61a435;}
+.headding .badge li.badge3 {background:url(/ux/images/finance/finduct_badge3.gif) no-repeat left top;border-color:#fe3d11;color:#fe3d11;}
+.headding .badge li.badge4 {background:url(/ux/images/finance/finduct_badge4.gif) no-repeat left top;border-color:#b861d8;color:#b861d8;}
+.headding .badge li.badge5 {background:url(/ux/images/finance/finduct_badge5.gif) no-repeat left top;border-color:#8f8f8f;color:#8f8f8f;}
+.headding .badge li.badge6 {background:url(/ux/images/finance/finduct_badge6.gif) no-repeat left top;border-color:#ff8a00;color:#ff8a00;}
+.headding .badge li.badge7 {background:url(/ux/images/finance/finduct_badge7.gif) no-repeat left top;border-color:#ff8a00;color:#ff8a00;}
+.popSection .headding .badge li + li {margin-left:4px;}
+/* 제휴카드 아이콘 */
+.benefit_icons span {display:inline-block;overflow:hidden;width:18px;height:18px;margin-right:4px;}
+.benefit_icons span.ico_point {background-image:url(/ux/images/finance/ico_cmaBeneS_point.png);} /* 포인트적립 */
+.benefit_icons span.ico_book {background-image:url(/ux/images/finance/ico_cmaBeneS_book.png);} /* 서적할인 */
+.benefit_icons span.ico_subway {background-image:url(/ux/images/finance/ico_cmaBeneS_subway.png);} /* 대중교통 */
+.benefit_icons span.ico_mobile {background-image:url(/ux/images/finance/ico_cmaBeneS_mobile.png);} /* 이동통신 */
+.benefit_icons span.ico_ssg {background-image:url(/ux/images/finance/ico_cmaBeneS_ssg.png);} /* 백화점 */
+.benefit_icons span.ico_shopping {background-image:url(/ux/images/finance/ico_cmaBeneS_shopping.png);} /* 쇼핑 */
+.benefit_icons span.ico_park {background-image:url(/ux/images/finance/ico_cmaBeneS_park.png);} /* 놀이공원 */
+.benefit_icons span.ico_movie {background-image:url(/ux/images/finance/ico_cmaBeneS_movie.png);} /* 영화 */
+.benefit_icons span.ico_car {background-image:url(/ux/images/finance/ico_cmaBeneS_car.png);} /* 자동차 */
+.benefit_icons span.ico_oil {background-image:url(/ux/images/finance/ico_cmaBeneS_oil.png);} /* 주유소 */
+.benefit_icons span.ico_flight {background-image:url(/ux/images/finance/ico_cmaBeneS_flight.png);} /* 여행 */
+.benefit_icons span.ico_sports {background-image:url(/ux/images/finance/ico_cmaBeneS_sports.png);} /* 스포츠 */
+.benefit_icons span.ico_cvs {background-image:url(/ux/images/finance/ico_cmaBeneS_cvs.png);} /* 편의점 */
+.benefit_icons span.ico_coffee {background-image:url(/ux/images/finance/ico_cmaBeneS_coffee.png);} /* 외식 */
+.benefit_icons span.ico_hair {background-image:url(/ux/images/finance/ico_cmaBeneS_hair.png);} /* 미용실 */
+.benefit_icons span.ico_etc {background-image:url(/ux/images/finance/ico_cmaBeneS_etc.png);} /* 기타 */
+/* 자산관리 포토폴리오 구성 아이콘 */
+.asstes_icon {display:inline-block;padding-left:20px;background-position:0 4px;background-repeat:no-repeat;}
+.asstes_icon.total {background-image:url(/ux/images/assets_admin/ico_pfType0.gif);} /* >전체 */
+.asstes_icon.type1 {background-image:url(/ux/images/assets_admin/ico_pfType1.gif);} /* >국내주식 */
+.asstes_icon.type2 {background-image:url(/ux/images/assets_admin/ico_pfType2.gif);} /* >국내주식혼합 */
+.asstes_icon.type3 {background-image:url(/ux/images/assets_admin/ico_pfType3.gif);} /* >국내채권혼합 */
+.asstes_icon.type4 {background-image:url(/ux/images/assets_admin/ico_pfType4.gif);} /* >국내채권 */
+.asstes_icon.type5 {background-image:url(/ux/images/assets_admin/ico_pfType5.gif);} /* >해외글로벌주식 */
+.asstes_icon.type6 {background-image:url(/ux/images/assets_admin/ico_pfType6.gif);} /* >해외이머징주식 */
+.asstes_icon.type7 {background-image:url(/ux/images/assets_admin/ico_pfType7.gif);} /* >해외주식혼합 */
+.asstes_icon.type8 {background-image:url(/ux/images/assets_admin/ico_pfType8.gif);} /* >해외채권혼합 */
+.asstes_icon.type9 {background-image:url(/ux/images/assets_admin/ico_pfType9.gif);} /* >해외채권 */
+.asstes_icon.type10 {background-image:url(/ux/images/assets_admin/ico_pfType10.gif);} /* >부동산 */
+.asstes_icon.type11 {background-image:url(/ux/images/assets_admin/ico_pfType11.gif);} /* >국내대안투자 */
+.asstes_icon.type12 {background-image:url(/ux/images/assets_admin/ico_pfType12.gif);} /* >해외대안투자 */
+.asstes_icon.type13 {background-image:url(/ux/images/assets_admin/ico_pfType13.gif);} /* >단기유동성 */
+.asstes_icon.type14 {background-image:url(/ux/images/assets_admin/ico_pfType14.gif);} /* >기타 */
+.asstes_icon.type15 {background-image:url(/ux/images/assets_admin/ico_pfType15.gif);} /* >주식 */
+.asstes_icon.type16 {background-image:url(/ux/images/assets_admin/ico_pfType16.gif);} /* >채권 */
+.asstes_icon.type17 {background-image:url(/ux/images/assets_admin/ico_pfType17.gif);} /* >현금성자산및기타 */
+/* 보유펀드 차트 리스트 */
+.chart_descBox ul.chart_desc {width:100%;}
+.chart_descBox ul.chart_desc:after {display:block;content:"";clear:both;}
+.chart_descBox ul.chart_desc li {float:left;width:45%;padding:0 0 5px 20px;font-size:12px;color:#444;text-align:left;line-height:18px;background-repeat:no-repeat;background-position:0 3px;}
+.chart_descBox ul.chart_desc li.deps1 {background-image:url(/ux/images/assets_admin/ico_pfType0.gif);}
+.chart_descBox ul.chart_desc li.deps2 {background-image:url(/ux/images/assets_admin/ico_pfType1.gif);}
+.chart_descBox ul.chart_desc li.deps3 {background-image:url(/ux/images/assets_admin/ico_pfType2.gif);}
+.chart_descBox ul.chart_desc li.deps4 {background-image:url(/ux/images/assets_admin/ico_pfType3.gif);}
+.chart_descBox ul.chart_desc li.deps5 {background-image:url(/ux/images/assets_admin/ico_pfType4.gif);}
+.chart_descBox ul.chart_desc li.deps6 {background-image:url(/ux/images/assets_admin/ico_pfType5.gif);}
+.chart_descBox ul.chart_desc li.deps7 {background-image:url(/ux/images/assets_admin/ico_pfType6.gif);}
+.chart_descBox ul.chart_desc li.deps8 {background-image:url(/ux/images/assets_admin/ico_pfType7.gif);}
+.chart_descBox ul.chart_desc li.deps9 {background-image:url(/ux/images/assets_admin/ico_pfType8.gif);}
+.chart_descBox ul.chart_desc li.deps10 {background-image:url(/ux/images/assets_admin/ico_pfType9.gif);}
+.chart_descBox ul.chart_desc li.deps11 {background-image:url(/ux/images/assets_admin/ico_pfType10.gif);}
+.chart_descBox ul.chart_desc li.deps12 {background-image:url(/ux/images/assets_admin/ico_pfType11.gif);}
+.chart_descBox ul.chart_desc li.deps13 {background-image:url(/ux/images/assets_admin/ico_pfType12.gif);}
+.chart_descBox ul.chart_desc li.deps14 {background-image:url(/ux/images/assets_admin/ico_pfType13.gif);}
+.chart_descBox ul.chart_desc li.deps15 {background-image:url(/ux/images/assets_admin/ico_pfType14.gif);}
+.chart_descBox ul.chart_desc li.deps16 {background-image:url(/ux/images/assets_admin/ico_pfType15.gif);}
+.chart_descBox ul.chart_desc li.deps17 {background-image:url(/ux/images/assets_admin/ico_pfType16.gif);}
+.chart_descBox ul.chart_desc li.deps18 {background-image:url(/ux/images/assets_admin/ico_pfType17.gif);}
+
+/* 도움말 */
+.ico_help {overflow:hidden;display:inline-block;width:16px;height:16px;margin:0;vertical-align:middle;text-indent:-9999px;background:url(/ux/images/common/btn/ico_help.png) no-repeat;z-index:5;}
+/* 상품별 확인사항 */
+.noneService {font-size:14px;} /* 설명서 미제공 상품 */
+.checkEnd {display:inline-block; position:relative; height:20px; margin:0; padding:0 0 0 20px; background:url(/ux/images/finance/checkonly.gif) no-repeat left 6px; font-size:14px; color:#444;}/* 설명서 확인완료*/
+button + .checkEnd, .checkEnd + .checkEnd {margin-top:4px;}
+/* 자산구성 현황 색상 블릿 */
+.stock_list span {display:inline-block;padding-left:20px;text-align:left;background:url(/ux/images/myassets/bg_ico_stock.png) 0 7px no-repeat;}
+.stock_list span.stock1 {background-position:0 3px;}
+.stock_list span.stock2 {background-position:0 -36px;}
+.stock_list span.stock3 {background-position:0 -76px;}
+.stock_list span.stock4 {background-position:0 -115px;}
+.stock_list span.stock5 {background-position:0 -154px;}
+.stock_list span.stock6 {background-position:0 -193px;}
+.stock_list span.stock7 {background-position:0 -232px;}
+.stock_list span.stock8 {background-position:0 -271px;}
+.stock_list span.stock9 {background-position:0 -310px;}
+.stock_list span.stock10 {background-position:0 -350px;}
+.stock_list span.stock11 {background-position:0 -388px;}
+.stock_list span.stock12 {background-position:0 -427px;}
+.stock_list span.stock13 {background-position:0 -466px;}
+.stock_list span.stock14 {background-position:0 -505px;}
+.stock_list span.stock15 {background-position:0 -544px;}
+.stock_list span.stock16 {background-position:0 -583px;}
+.stock_list span.stock17 {background-position:0 -623px;}
+.stock_list span.stock18 {background-position:0 -661px;}
+
+
+/*주의 아이콘*/
+.bul_coution {text-indent:22px;background:url("/ux/images/common/bulletCoution.png") no-repeat left 4px;}
+.bul_coution strong {color:#c75414;font-weight:600;}
+.bul_coution span {color:#c75414;}
+/********************
+Float style
+********************/
+.clear {clear:both !important;zoom:1;}
+.clear:after {content:"";display:block;clear:both;}
+/* ifrmae */
+.iframe-contents {overflow:hidden;width:960px;}
+/* 컨텐츠 가시성 - js에서 사용 */
+.dn, .disNone {display:none !important;}
+.db {display:block !important;}
+.di {display:inline !important;}
+.dib {display:inline-block !important;}
+/* border */
+.bdT0 {border-top:0 !important;}
+.bdl0 {border-left:0 !important;}
+.bdr0 {border-right:0 !important;}
+.bdb0 {border-bottom:0 !important;}
+
+/********************
+Text style - color , size
+********************/
+.txt_gray22 {color:#222 !important;}
+.txt_gray44 {color:#444 !important;}
+.txt_gray74 {color:#747474 !important;}
+.txt_gray7414 {font-size:14px;color:#747474 !important;}
+.txt_gray44_strong {color:#444 !important; font-weight:bold;}
+.txt_grayC8 {color:#c8c8c8 !important;}
+.txt_grayBD22 {color:#222 !important;font-weight:bold !important;}/* 매도스케쥴러에서 사용 */
+.orange {color:#c75414 !important;}
+.txt_orange,
+.txt_orange_large {color:#e56c00 !important;}
+.txt_orange_small {color:#c34a07 !important;}
+.txt_red_strong {color:#c80415 !important;}
+.txt_red_light {color:#c9414d !important;}
+.txt_blue {color:#0977c9 !important;}
+.txt_blue_strong {color:#0062ab !important;}
+.txt_l_violet {color:#b4558c;}
+.txt_violet {color:#7655b3;}
+.txt_gold {color:#a48149;}
+.txt_font11 {font-size:11px !important;}
+.txt_font12 {font-size:12px !important;}
+.txt_font13 {font-size:13px !important;}
+.txt_font14 {font-size:14px !important;}
+.txt_font15 {font-size:15px !important;}
+.txt_font16 {font-size:16px !important;}
+.txt_font17 {font-size:17px !important;}
+.txt_font18 {font-size:18px !important;}
+.txt_font19 {font-size:19px !important;}
+.txt_font20 {font-size:20px !important;}
+.txt_font21 {font-size:21px !important;}
+.txt_font22 {font-size:22px !important;}
+.txt_font24 {font-size:24px !important;}
+.txt_font28 {font-size:28px !important;line-height:33px !important;}
+
+.txt_font12 > li {font-size:12px !important;}
+.txt_font13 > li {font-size:13px !important;}
+.txt_font14 > li {font-size:14px !important;}
+.txt_font15 > li {font-size:15px !important;}
+.txt_font16 > li {font-size:16px !important;}
+.txt_font17 > li {font-size:17px !important;}
+.txt_font18 > li {font-size:18px !important;}
+
+.txt_inherit {font-size:inherit !important;}
+.txt_inherit li {font-size:inherit !important;}
+
+sup, sub {font-size:11px !important;}
+.order_buy{color:#f41521 !important;font-weight:bold !important}
+.order_sell{color:#0000ff !important;font-weight:bold !important}
+.order_modify{color:#3aa032  !important;font-weight:bold !important}
+.order_bold{font-weight:bold !important}
+/* 버튼 모양인데 일반텍스트인 경우 */
+p.btnstyleText {display:inline-block;padding:0 8px;border:1px solid #bbb; height:23px;line-height:21px;font-size:12px;vertical-align:middle;} 
+
+.txt_udln {text-decoration:underline !important;}
+.oneLine {white-space:nowrap;}
+/********************
+Align style
+********************/
+.fl {Float:left !important;}
+.fr {Float:right !important;}
+.taL {text-align:left !important;}
+.taR {text-align:right !important;}
+.taC {text-align:center !important;}
+.vaT {vertical-align:top !important;}
+.vaM {vertical-align:middle !important;}
+.vaB {vertical-align:bottom !important;}
+.vaBase{vertical-align:baseline !important;}
+.bold {font-weight:600 !important;}
+/* arrayArea 삭제 -> alignBox 변경*/
+.alignBox {position:relative;width:100%;text-align:center;}
+.alignBox:after {display:block;content:"";clear:both;}
+.alignBox .fl,
+.alignBox .fr {text-align:left;}
+.alignBox .tbl_desc {padding-top:0 !important;}
+/* 버튼 정렬 - 버튼이 가운데 있는 상태에서 좌우로 버튼이 있어야할경우 */
+.btnLeft {position:absolute;left:0;top:0;}
+.btnRight {position:absolute;right:0;top:0;}
+.btnArea {position:relative;width:100%;padding:30px 0 0 0;text-align:center;}
+.btnArealogin {position:relative;width:100%;padding:20px 0 0 0;text-align:center;}
+.btnArea:after {content:'';display:block;clear:both;}
+.btnArea .btnLeft {top:30px;}
+.btnArea .btnRight {top:30px;}
+.btnArea + .guideTb1 {margin-top:30px;} /* 환매내역리스트에서 사용 */
+
+
+/********************
+여백 style
+********************/
+.relative {position:relative;}
+.absolute {position:absolute;}
+
+/* padding */
+.pd0 {padding:0px !important;}
+
+.pdt0 {padding-top:0px !important;}
+.pdt5 {padding-top:5px !important;}
+.pdt10 {padding-top:10px !important;}
+.pdt15 {padding-top:15px !important;}
+.pdt20 {padding-top:20px !important;}
+.pdt30 {padding-top:30px !important;}
+.pdt40 {padding-top:40px !important;}
+
+.pdb0 {padding-bottom:0px !important;}
+.pdb5 {padding-bottom:5px !important;}
+.pdb10 {padding-bottom:10px !important;}
+.pdb15 {padding-bottom:15px !important;}
+.pdb20 {padding-bottom:20px !important;}
+
+.pdl0 {padding-left:0px !important;}
+.pdl5 {padding-left:5px !important;}
+.pdl10 {padding-left:10px !important;}
+.pdl15 {padding-left:15px !important;}
+.pdl20 {padding-left:20px !important;}
+.pdl25 {padding-left:25px !important;}
+.pdl30 {padding-left:30px !important;}
+
+.pdr0 {padding-right:0px !important;}
+.pdr5 {padding-right:5px !important;}
+.pdr10 {padding-right:10px !important;}
+.pdr20 {padding-right:20px !important;}
+.pdr25 {padding-right:25px !important;}
+.pdr30 {padding-right:30px !important;}
+
+
+/* margin */
+.mg0 {margin:0px !important;}
+
+.mgt0 {margin-top:0px !important;}
+.mgt5 {margin-top:5px !important;}
+.mgt10 {margin-top:10px !important;}
+.mgt20 {margin-top:20px !important;}
+.mgt30 {margin-top:30px !important;}
+.mgt40 {margin-top:40px !important;}
+
+.mgb0 {margin-bottom:0px !important;}
+.mgb5 {margin-bottom:5px !important;}
+.mgb10 {margin-bottom:10px !important;}
+.mgb15 {margin-bottom:15px !important;}
+.mgb20 {margin-bottom:20px !important;}
+.mgb25 {margin-bottom:25px !important;}
+.mgb30 {margin-bottom:30px !important;}
+.mgb40 {margin-bottom:40px !important;}
+.mgb50 {margin-bottom:50px !important;}
+.mgb60 {margin-bottom:60px !important;}
+.mgb70 {margin-bottom:70px !important;}
+
+.mgr0 {margin-right:0px !important;}
+.mgr5 {margin-right:5px !important;}
+.mgr10 {margin-right:10px !important;}
+.mgr16 {margin-right:16px !important;}
+.mgr20 {margin-right:20px !important;}
+.mgr30 {margin-right:30px !important;}
+
+.mgl0{margin-left:0px !important;}
+.mgl5{margin-left:5px !important;}
+.mgl10 {margin-left:10px !important;}
+.mgl15 {margin-left:15px !important;}
+.mgl20 {margin-left:20px !important;}
+.mgl30 {margin-left:30px !important;}
+
+
+/*  table속성을 이용한 중앙정렬  */
+.verticalMiddle {display:table !important; width:100%; height:100%;}
+.verticalMiddle .table_cell {display:table-cell !important; vertical-align:middle;}
+.bar {display:inline-block; position:relative;}
+
+.cursorDefault {cursor:default; color:#aaa !important;}
+.current .cursorDefault {color:#FFF !important;}
+.valignTop {vertical-align:top;}
+.valignMiddle{vertical-align:middle;}
+
+
+

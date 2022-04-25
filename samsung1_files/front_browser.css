@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+/********************
+* Cross Browsing Stylesheet *
+- Browser Vender Prefix 포함
+
+- IE8
+- IE9
+- IE10
+- IE811
+- safari
+- chrome
+- firefox
+********************/
+
+/**********************
+IE8 - .msie8 {}
+**********************/
+.msie8 .radio.readonly, .msie8 .radio.disabled {background-image:url(/ux/images/common/ico_form_opacity.gif)}
+.msie8 .checkbox.readonly {background-image:url(/ux/images/common/ico_form_opacity.gif)}
+.msie8 .checkbox.disabled {background-image:url(/ux/images/common/ico_form_opacity.gif)}
+.msie8 select.disable+.wrap div a.selecter, .msie8 .slipSelect select.disable+.wrap div a.selecter {border-left-color:#eee;background-image:url(/ux/images/common/arrow_select_opacity.gif)}
+.msie8 select.disable+.wrap div {color:#999;border-color:#eee !important;opacity:100}
+.msie8 table tr.deactivate th.no_dim span.dimm {display:block !important; visibility:hidden;}
+.msie8 .lay-help .layer {width:212px}
+.msie8 .lay-help.w250 .layer {width:310px}
+.msie8 .lay-help.w450 .layer {width:410px}
+.msie8 .lay-help.w600 .layer {width:560px}
+.msie8 .page_function .text_mid.mgr0 {margin-right:2px !important}
+.msie8 button{width:auto}
+.msie8 table{table-layout:fixed;}
+
+/*고객센터>공인인증/OTP>인증서발급/재발급>인증서신규발급>(LP)본인확인절차강화*/
+.msie8 .identBox .disabled.radio, .msie8 .identBox .readonly.radio {background-image:url(/ux/images/common/ico_form_opacity2.gif)}
+/**********************
+IE9 - .msie9 {}
+**********************/
+.msie9 table tbody tr.thead td .lay-help,
+.msie9 table thead tr th .lay-help{margin-top:0px;vertical-align:text-top}
+
+/**********************
+IE10 - .msie10 {}
+**********************/
+.msie10 table tbody tr.thead td .lay-help,
+.msie10 table thead tr th .lay-help{margin-top:0px;vertical-align:text-top}
+
+/**********************
+IE11 - .msie11 {}
+**********************/
+.msie11 .checkbox.checked{margin-top:-2px}
+.msie11 table tbody tr.thead td .lay-help,
+.msie11 table thead tr th .lay-help{margin-top:0px;vertical-align:text-top}
+
+
+/**********************
+safari - .safari {
+**********************/
+/*버튼*/
+.safari .btnLarge {line-height:40px}
+.safari .btnMid {line-height:30px}
+.safari .btnSmall {line-height:26px}
+.safari .btnEtc.white {line-height:23px}
+/*로그인 로그아웃 버튼*/
+.safari .utilArea ul.loginArea li .login, .safari .utilArea ul.loginArea li .logout {line-height:25px}
+.safari .utilArea ul.loginArea li .logout:after {top:4px}
+/* 상단 -인기검색어, 인기메뉴 */
+.safari .interestGroup var {line-height:14px}
+/*탭*/
+.safari .toggleTab li a {line-height:23px}
+.safari .tabDeps3 li a {line-height:44px}
+.safari .tabDeps2 li a {line-height:43px}
+/*디자인셀렉트*/
+.safari .page_function .select-box .wrap div span {padding-top:3px}
+/*도움말 레이어*/
+.safari .lay-help .layer {width:212px}
+.safari .lay-help.w250 .layer {width:310px}
+.safari .lay-help.w450 .layer {width:410px}
+.safari .lay-help.w600 .layer {width:560px}
+.safari .sampop #nav .myAsset a {background-position:right 6px}
+/*h1 title*/
+.safari .headArea .head h1 {padding-top:20px}
+/*주가관련*/
+.safari .riseIC, .safari .rise var {background-position:0 10px}
+/* 금융상품>펀드>추천펀드>금융상품뉴스>카드형상세 */
+/* 추천상품 */
+.safari .detailCard_recom {width:722px;box-sizing:border-box}
+.safari caption, .safari .blind {display:none;}
+/*펀드>펀드상세*/
+.safari .additionalInfo .headtabClass {right:103px}
+.safari .findetail_head .function li a.btnSmall {line-height:26px}
+.safari .chartView .legend .select-box .wrap div span {padding-top:3px}
+/*ELS/DLS>찾기*/
+.safari fieldset.periodSearch.slip button[type="button"] {line-height:30px}
+/*ELS/DLS>ELS/DLS 상세*/
+.safari .els_templ .no_dataBox {font-family:'맑은 고딕','Malgun Gothic','돋음',Dotum,Apple SD Gothic Neo,AppeGothic,Arial,Helvetica,sans-serif;}
+.safari .findetail_summary.col5 dl.last {width:143px}
+.safari fieldset.periodSearch.slip button[type="button"].btnLarge.gray {line-height:30px}
+.safari .findetail_summary dl dd.verticalMiddle .table_cell {display:block !important;padding-top:5px}
+/*ELSDLS>보유현황*/
+.safari .tbl_chart .ico_chart.ico01 {background-position:0 1px;}
+.safari .tbl_chart .ico_chart.ico02 {background-position:0 -27px;}
+.safari .tbl_chart .ico_chart.ico03 {background-position:0 -55px;}
+.safari .tbl_chart .ico_chart.ico04 {background-position:0 -83px;}
+.safari .tbl_chart .ico_chart.ico05 {background-position:0 -113px;}
+.safari .tbl_chart .ico_chart.ico06 {background-position:0 -141px;}
+.safari .tbl_chart .ico_chart.ico07 {background-position:0 -167px;}
+.safari .tbl_chart .ico_chart.ico08 {background-position:0 -195px;}
+/*RP>찾기*/
+.safari .rpSearch .h3_tit + .lay-help, .rpBuy .h3_tit + .lay-help {margin:0 8px}
+/*RP>RP 매도*/
+.safari table.rpsell .select-box, .safari table.rpCancel .select-box {width:289px !important}
+/*채권>채권분석*/
+.safari fieldset.periodSearch.analyze > ul {padding-top:10px}
+/*은퇴자산 점검하기*/
+.safari .retirement_wealth .wealth dd.step ol li.step02 {background-position:-78px 0;}
+.safari .retirement_wealth .wealth dd.step ol li.step03 {background-position:-252px 0;}
+.safari .retirement_wealth .wealth dd.step ol li.step04 {background-position:-429px 0;}
+/*보험>보험상세*/
+.safari .findetail_summary.col3 dl {width:261px}
+.safari .findetail_summary.col3 dl.colspan2 {width:553px}
+.safari .detailBox.otp .infoList {margin-right:20px}
+/*스탬프*/
+.safari .direction_box .direction .manual_list li .title strong {line-height:26px}
+.safari .stampCal ul li > span {line-height:64px}
+.safari .countBox .limitBox span {margin-right:-2px;line-height:30px}
+.safari .countBox .limitTime dl dd strong {vertical-align:middle}
+/*온라인 계좌개설*/
+.safari .online_content_full a.creatAccount {line-height:39px}
+/*금융상품거래안내 > RP거래안내*/
+.safari .board_summary .select-box .wrap div span {line-height:28px}
+/*H1,2 타이틀*/
+.safari .h1_tit, .safari .h2_tit {font-family:'맑은 고딕','Malgun Gothic','돋음',Dotum,Apple SD Gothic Neo,AppeGothic,Arial,Helvetica,sans-serif;}
+/*도트리스트*/
+.safari .tipArea ul > li {background-position:0 10px}
+.safari .p.dot_list, .safari .ul.dot_list li, .safari .tbl_desc > li, .safari .tbl_desc ul li, .safari .tbl_desc p {background-position:0 8px}
+.safari .txt_essential {background-position:0 0}
+/*퇴직연금알아보기>부가서비스*/
+.safari dl.pop_addSVC dd {background-position:0 8px}
+
+/**********************
+chrome - .chrome {}
+**********************/
+.chrome .lay-help.btn_center a.btn_help {padding:1px 5px}
+/* 상품아이콘 - 상품타이틀 */
+.chrome .headding .badge li {line-height:15px}
+/* 금융상품>공통>상단 조건검색 */
+.chrome .searchFilter .checkTree.recomeProduct .checkbox + span {line-height:16px}
+/*투자정보>종목발굴서비스>시장관심주>시장주도종목 - 상단 테이블*/
+.chrome .tbl1 tbody td.marketEventTd{padding:20px 18px}
+
+
+/**********************
+firefox - .firefox {}
+**********************/
+.firefox .btnLarge {padding:0 12px}
+.firefox .btnMid {padding:0 9px}
+.firefox .btnSmall {padding:0 7px}
+.firefox .btnSmall.auto {padding:4px 7px}
+.firefox .btnMid.excel,
+.firefox .btnMid.help,
+.firefox .btnMid.print,
+.firefox .btnSmall.showlist,
+.firefox a.expendSw, .firefox .btnSmall.hidelist {padding-right:27px}
+.firefox .btnEtc {padding:0 9px}
+.firefox .btnMid.white.img {padding-right:30px !important} /* 이미지 */
+.firefox .btnMid.white.pdf {padding-right:30px !important} /* PDF */
+.firefox .btnMid.white.ppt {padding-right:30px !important} /* PPT */
+.firefox .btnCheck,
+.firefox .btnChecked {padding-left:33px !important;}
+
+/*온라인/지점/은행계좌개설 > 계좌개설 안내*/
+.firefox .varietyGoods .box dl dd .btn li .lay-help{margin:3px 0px 0px 17px}
+.firefox .varietyGoods .box dl dd .btn li.type2 .lay-help{margin-left:12px}
+/*펀드>펀드신규매수 step2 간이투자설명서*/
+.firefox table .tbl_info .btnSmall {padding:0 5px}
+/*펀드>적립식안심플래안내*/
+.firefox .KeepPlanField button[type="button"] {width:46px}
+/*펀드>펀드찾기>(P)펀드상세>(P)클래스펀드 */
+.firefox .additionalInfo .headtabClass {right:109px}
+/*펀드>펀드이동*/
+.firefox .fundTrans .fnBtn .btnMid {width:100%}
+/*골든랩>매매불원종목 등록*/
+.firefox .excludeBox .btnArea .btnSmall.page {padding-right:23px !important}
+.firefox .excludeBox .btnArea .btnSmall.page.left {padding:0 7px 0 23px !important}
+/*트레이딩>시장/종목분석>시장관심주>공시관심종목>(P)관심종목등록*/
+.firefox .favorite_setting .btn_wrap li button{width:28px}
+.firefox .favorite_setting .btn_wrap li .addPrd{padding:0 22px 0 7px}
+.firefox .favorite_setting .btn_wrap li .delPrd{padding:0 7px 0 22px}
+.firefox .favorite_setting .wishSearch .wishAlign.fl li a{font-size:0px;text-indent:-9999px}
+
+/*퇴직연금>상품매매>투자비율관리*/
+.firefox fieldset.investRatio li button {padding:0}
+/*원리금 보장상품 현황*/
+.firefox .guaranteeTb .btnSmall {width:61px}
+/*은퇴설계 계산기*/
+.firefox .alignBox.rate3 .custom_txt {padding:109px 0}
+
+/*고객센터>상담센터안내>상담제안안내*/
+.firefox .more_infoBox.consultBox div.col .consultBtnArea button.btnMid {padding:0 6px}
